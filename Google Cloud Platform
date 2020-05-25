@@ -10,4 +10,6 @@ measured service (pay only for what u consumed)
 colocation brought us cloud computing [physical/colo -> virtualization -> serverless (automatic)]
 cloud computing service let you scale your resource use up and down.
 false: To get resources from a cloud computing provider, is working with a person at the provider required.
-virtualised data centers: 
+virtualised data centers: IaaS [infrastructure as a service] and PaaS [platform as a service]
+IaaS provide raw compute storage and networks
+PaaS bind application to libraries that give access to the infrastructure that application needs.
