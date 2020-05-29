@@ -31,8 +31,13 @@ IAM lets administrators authorize who can take action on specific resources. An 
 Q) when would u choose organization node. True: when u want to create folders, when u want to apply organization-wide policies centrally; false: when u want to organize resources into project.
 /Interacting with GCP
 Google Cloud Launcher is a tool for quickly deploying functional software packages on Google Cloud Platform. There's no need to manually configure the software, virtual machine instances, storage or network settings. Although, you can modify many of them before you launch if you like. GCP updates the base images for these software packages to fix critical issues and vulnerabilities. But it doesn't update the software after it's been deployed. Fortunately, you'll have access to the deployed systems, so you can maintain them. 
-/LAMP Stack deployed [checked the site and created a php testpage]
-/used Qwiklabs [cloud console]
+/LAMP Stack deployed [checked the site and created a php testpage], used Qwiklabs [cloud console]
+
+False: In Google Cloud IAM: if a policy applied at the project level gives you Owner permissions, your access to an individual resource in that project might be restricted to View permission if someone applies a more restrictive policy directly to that resource. [Policies are a union of those applied on resource itself and those inherited from higher levels in the hierarchy. If a parent policy is less restrictive, it overrides a more restrictive policy applied on the resource. If a parent policy is more restrictive, it does not override a less restrictive policy applied on the resource. Therefore, access granted at a higher level in the hierarchy cannot be taken away by policies applied at a lower level in the hierarchy]
+All Google Cloud Platform resources are associated with a project.
+Service accounts are used to provide: a way to restrict the actions of a resource (such as a VM) can perform, a way to allow users to act with service account permissions and authentication between GCP services, but not a set of predefined permissions.
+primitive roles affect all the resources in a project. predefined roles apply to specific serive in a project.
+
 Compute Engine lets you run virtual machines on Google's global infrastructure. can flexibly reconfigure them and a VM running on Google's cloud has 
 /VPC Network
 can create a virtual machine instance by using the Google Cloud Platform console or the GCloud command line tool. Speaking of processing power, if you have workloads like machine learning and data processing that can take advantage of GPUs, many GCP zones have GPU's available for you. Just like physical computers need disks, so do VM. You can choose two kinds of persistent storage; standard or SSD. If your application needs high-performance scratch space, you can attach a local SSD, but be sure to store data of permanent value somewhere else because local SSDs content doesn't last past when the VM terminates. That's why the other kinds are called persistent disks. 
