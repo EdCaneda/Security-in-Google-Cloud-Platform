@@ -51,3 +51,16 @@ An application running in a Compute Engine virtual machine needs high-performanc
 A GCP customer wants to load-balance traffic among the back-end VMs that form part of a multi-tier application - regional internal load balancer.
 Dedicated interconnect is a Service Level Agreement.
 
+{Cloud Storage}/Google Cloud Platform has other storage options to meet your needs for structured, unstructured, transactional and relational data. core storage options: Cloud Storage, Cloud SQL, Cloud Spanner, Cloud Data Store and Google Big Table.
+object storage - unique keys like URLs.
+Cloud Storage is comprised of buckets you create and configure and use to hold your storage objects. The storage objects are immutable [You can turn on object versioning on your buckets if you want. If you do, Cloud Storage keeps a history of modifications. That is, it overrides or deletes all of the objects in the bucket. You can list the archived versions of an object, restore an object to an older state or permanently delete a version as needed. If you don't turn on object versioning, new always overrides old], which means that you do not edit them in place but instead you create new versions. Cloud Storage always encrypts your data on the server side before it is written to disk. data in-transit is encrypted using HTTPS. ACLs and automatic delete or archives.
+Cloud storage classes: regional, multi-regional, nearline and coldline.
+Cloud Storage objects live in buckets. characteristics defined on a per-bucket basis- globally unique name, a geographic location, a default storage class; not- default file type or an encryption-at-rest setting.
+False: Cloud Storage is well suited to providing the root file system of a Linux virtual machine. 
+
+/cloud bigtable
+False: Each table in NoSQL databases such as Cloud Bigtable has a single schema that is enforced by the database engine itself. 
+Some developers think of Cloud Bigtable as a persistent hashtable. that means - each item in the database can be sparsely populated, and is looked up with a single key.
+
+{Cloud SQL and cloud spanner}/Cloud SQL presents a MySQL or PostgreSQL interface to clients. cloud spanner can scale to higher database sizes, uses ANSI SQL 2011 with extensions and offers transactional consistency at global scale.
+cloud datastore is another highly scalable NoSQL database like bigtable. One of its main use cases is to store structured data from App Engine apps. You can also build solutions that span App Engine and Compute Engine with Cloud Datastore as the integration point. As you would expect from a fully-managed service, Cloud Datastore automatically handles sharding and replication, providing you with a highly available and durable database that scales automatically to handle load. Unlike Cloud Bigtable, it also offers transactions that affect multiple database rows, and it lets you do SQL-like queries. 
