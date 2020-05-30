@@ -65,3 +65,13 @@ Some developers think of Cloud Bigtable as a persistent hashtable. that means - 
 {Cloud SQL and cloud spanner}/Cloud SQL presents a MySQL or PostgreSQL interface to clients. cloud spanner can scale to higher database sizes, uses ANSI SQL 2011 with extensions and offers transactional consistency at global scale.
 cloud datastore is another highly scalable NoSQL database like bigtable. One of its main use cases is to store structured data from App Engine apps. You can also build solutions that span App Engine and Compute Engine with Cloud Datastore as the integration point. As you would expect from a fully-managed service, Cloud Datastore automatically handles sharding and replication, providing you with a highly available and durable database that scales automatically to handle load. Unlike Cloud Bigtable, it also offers transactions that affect multiple database rows, and it lets you do SQL-like queries. 
 
+cloud storage-
+You are developing an application that transcodes large video files. 
+often the ingestion point for data being moved into the cloud, and is frequently the long-term storage location for data
+cloud bigtable-
+You manufacture devices with sensors and need to stream huge amounts of data from these devices to a storage option in the cloud.
+cloud datastore-
+You are building a small application. If possible, you'd like this application's data storage to be at no additional charge.
+cloud spanner-
+Your application needs to store data with strong transactional consistency, and you want seamless scaling up. 
+true: nearline and coldline assess lower storage feed and additional retrieval fees. False: data in them is not retrievable immediately, they use differently architected-API from other two,  they have lower durability.
