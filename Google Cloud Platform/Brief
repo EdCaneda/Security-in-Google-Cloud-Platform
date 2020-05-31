@@ -64,7 +64,7 @@ Some developers think of Cloud Bigtable as a persistent hashtable. that means - 
 
 {Cloud SQL and cloud spanner}/Cloud SQL presents a MySQL or PostgreSQL interface to clients. cloud spanner can scale to higher database sizes, uses ANSI SQL 2011 with extensions and offers transactional consistency at global scale.
 cloud datastore is another highly scalable NoSQL database like bigtable. One of its main use cases is to store structured data from App Engine apps. You can also build solutions that span App Engine and Compute Engine with Cloud Datastore as the integration point. As you would expect from a fully-managed service, Cloud Datastore automatically handles sharding and replication, providing you with a highly available and durable database that scales automatically to handle load. Unlike Cloud Bigtable, it also offers transactions that affect multiple database rows, and it lets you do SQL-like queries. 
-
+{deploy a web server VM instance, create a cloud storage bucket using gsutil command line, create cloud SQL instance}/in Qwiklabs
 cloud storage-
 You are developing an application that transcodes large video files. 
 often the ingestion point for data being moved into the cloud, and is frequently the long-term storage location for data
@@ -88,12 +88,13 @@ other features in GKE and kubernetes- configuring health checks, setting session
 reasons for deploying applications using containers- simpler to migrate workloads, consistency across development, testing, production environments. not- no need to allocate resources in which to run containers, tight coupling between applications and OSs.
 Google Cloud Platform provides a secure, high-speed container image storage service for use with Kubernetes Engine.
 Kubernetes Engine workloads run in clusters built from compte engine VMs.
+{start a kubernetes engine cluster, runa nd deploy a container and scale up}/in qwiklabs
 
 App Engine is a better choice for a web application than for long-running batch processing.
 false: App Engine just runs applications; it doesn't offer any services to the applications it runs. 
 Google provides App Engine software development kits in several languages, so that you can test your application locally before you upload it to the real App Engine service. The SDKs also provide simple commands for deployment. 
 App Engine Flexible Environment applications let their owners control the geographic region where they run.
-
+{deploy a hello world application to App engine}/in qwiklabs
 True: It is possible for an App Engine application's daily billing to drop to zero. App Engine manages the hardware and networking infrastructure required to run your code. False: Developers who write for App Engine do not need to code their applications in any particular way to use the service. App Engine requires you to supply or code your own application load balancing and logging services. App Engine charges you based on the resources you pre-allocate rather than based on the resources you use.
 advantages of using the App Engine Flexible Environment over App Engine Standard. True: You can install third-party binaries. Your application can write to local disk. You can SSH in to your application. False: Your application can execute code in background threads. Google provides automatic in-place security patches
 advantages of using the App Engine Standard Environment over App Engine Flexible. true: Scaling is finer-grained. Billing can drop to zero if your application is idle. Google provides and maintains runtime binaries. False: You can choose any programming language. You can install third-party binaries.
@@ -101,3 +102,7 @@ Apigee Edge-
 You want to do business analytics and billing on a customer-facing API. 
 You want to gradually decompose a pre-existing monolithic application, not implemented in GCP, into microservices. 
 cloud endpoints- you want to support developers who are building services in GCP through API logging and monitoring. 
+a developer choose to store source code in Cloud Source Repositories to reduce work and keep code private to the GCP project [not to have control over hosting infrastructure]. 
+
+advantage of putting event-driven components of your application into Cloud Functions - Cloud Functions handles scaling these components seamlessly. [Your code executes whenever an event triggers it, no matter whether it happens rarely or many times per second. That means you don't have to provision compute resources to handle these operations]. not- Cloud Functions means that processing always happens free of charge.
+/o->quiz
