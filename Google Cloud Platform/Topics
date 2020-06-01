@@ -10,13 +10,39 @@ IAM
 IAM roles
 Interaction with GCP
 Cloud marketplace/Launcher
+Lab1
 VPC network
 Compute engine
 important VPC capabilities
+Lab2
 Storage options
 Cloud storage
 cloud bigtable
 cloud SQL and Cloud spanner
 Cloud datastore
 comparing storage options
-...
+Lab3
+containers, kubernetes and kubernetes engine
+Introduction to Kubernetes and GKE
+Introduction to Hybrid and Multi-Cloud Computing (Anthos)
+Lab4
+App engine
+App engine standard environment
+App engine flexible environent
+Cloud Endpoints and Apigee Edge
+Lab5
+Cloud source repositories
+Deployment: Infrastructure as code
+cloud functions (Q)
+monitoring
+Lab6
+Introduction to Big Data and Machine Learning
+Cloud Big Data Platform
+Cloud Dataflow
+bigquery
+Cloud Pub/Sub and Cloud Datalab
+Cloud Machine Learning Platform
+Machine learning APIs
+Lab7
+Course review
+/next steps
