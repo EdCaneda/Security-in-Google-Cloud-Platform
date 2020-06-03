@@ -1,7 +1,34 @@
 INTRO & Foundations of GCP Security
+..
+Google Cloud's Approach to Security
+VPC Network Security and Monitoring
+Google Cloud's Shared Security Model
+Threats Mitigated by Google and Google Cloud
+Access Transparency and Access Approval
 
 Cloud Identity
+..
+Google Admin Console
+Syncing with Microsoft Active Directory
+Using Managed Service for Microsoft Active Directory
+Choosing between Google authentication and SAML-based SSO
+Managing GCP Permissions and Groups
+Demo: Defining Users with Cloud Identity Console
 
 Identity and Access Management (IAM)
+..
+Resource Manager - objects, accounts, labels
+IAM - roles, policies, best practices, recommender, troubleshooter, audit logs
+Lab: Configuring IAM and Custom Roles
 
 VPCs for Isolation and Security
+..
+VPC Firewall: Rules, defaults, best practices
+Lab: Configuring VPC Firewalls
+Load Balancing and SSL Policies
+Interconnect and SSL Peering Options
+Cloud Interconnect
+Best Practices for VPC Networks
+VPC Service Controls
+VPC Flow Logs
+Lab: Using and Viewing VPC Flow Logs in Stackdriver
