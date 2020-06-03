@@ -14,3 +14,4 @@ Create Cloud Identity user accounts.
 Assign a Cloud Identity user access to a GCP project. And utilize groups to simplify user management and lower operational overhead.
 
 can use both Cloud Identity and GSuite services to manage your users across your domain. 
+cloud identity can work with any domain name that is able to receive email.
