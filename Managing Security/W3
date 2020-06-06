@@ -5,3 +5,16 @@ Projects however are required in GCP, and any resource that is deployed must be 
 Labels are created in the form of a key value pair and are used to help you organize and manage your cloud resources. There are many reasons you might want to use labels. To distinguish between resources owned by different teams for budgeting or billing purposes team or cost center labels. To label the different components of large distributed applications, like front end or dashboard component labels. To show which systems in your network are for production use and which are for testing environment labels. To indicate the state of an instance of a resource. For example, if it is in the active instance or one that is ready to be archived, state labels. To distinguish between virtual machines, which may otherwise be virtually identical, VM labels. 
 IAM roles: primitive [owner,editor,viewer], predefined/curated [instanceadmin,browser], custom [privacy reviewer]
 [the instance admin predefined role provides the permissions needed to manage Google Compute Engine instances. The predefined browser role, for example, provides read access to browse the hierarchy for a project including the folder, organization, and Cloud IAM policy. However, the browser role does not include permission to view resources in the project. Be aware that once custom roles are created, you must manage the permissions granted for them. If, for example, a new data storage service is created in the future, that will need to be audited. Permissions for that new service would need to be added to your privacy reviewer role]
+When new permissions, features or services are added to GCP, your custom role will not be updated automatically. Audit logs record project level permission changes and these should be used to audit any policy changes made. To perform the audit, export the audit logs to Google Sloud Storage or bit query. Exporting logs to Cloud Storage can also allow audit logs to be stored indefinitely. 
+
+Lab:
+description: Custom role to view apps
+etag: BwWnZb5YdmQ=
+includedPermissions:
+- appengine.versions.get
+- appengine.versions.list
+- compute.instances.get
+- compute.instances.list
+name: projects/qwiklabs-gcp-02-fff6857c2923/roles/app_viewer
+stage: ALPHA
+title: App Viewer
