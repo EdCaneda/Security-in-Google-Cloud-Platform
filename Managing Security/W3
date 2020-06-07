@@ -6,15 +6,8 @@ Labels are created in the form of a key value pair and are used to help you orga
 IAM roles: primitive [owner,editor,viewer], predefined/curated [instanceadmin,browser], custom [privacy reviewer]
 [the instance admin predefined role provides the permissions needed to manage Google Compute Engine instances. The predefined browser role, for example, provides read access to browse the hierarchy for a project including the folder, organization, and Cloud IAM policy. However, the browser role does not include permission to view resources in the project. Be aware that once custom roles are created, you must manage the permissions granted for them. If, for example, a new data storage service is created in the future, that will need to be audited. Permissions for that new service would need to be added to your privacy reviewer role]
 When new permissions, features or services are added to GCP, your custom role will not be updated automatically. Audit logs record project level permission changes and these should be used to audit any policy changes made. To perform the audit, export the audit logs to Google Sloud Storage or bit query. Exporting logs to Cloud Storage can also allow audit logs to be stored indefinitely. 
-
-Lab:
-description: Custom role to view apps
-etag: BwWnZb5YdmQ=
-includedPermissions:
-- appengine.versions.get
-- appengine.versions.list
-- compute.instances.get
-- compute.instances.list
-name: projects/qwiklabs-gcp-02-fff6857c2923/roles/app_viewer
-stage: ALPHA
-title: App Viewer
+The Cloud IAM recommender evaluates only role grants that were made at the project level and that have existed for at least 90 days. It does not evaluate any of the following items, conditional role grants, role grants for Google managed service accounts, or access controls that are separate from Cloud IAM. Recommender will suggest that you revoke an existing role when it has been in effect for 90 days or more and when it has not been used within the past 90 days. Recommender uses machine learning to predict when permissions may be needed by a particular role in the future. If those permissions are not currently enabled, recommender will suggest adding them. 
+Q
+Cloud IAM Objects that can be used to organize resources in GCP are organizations, roles, members and folders.
+Projects in GCP provide many management-related features, including the ability to track and manage quota usage, selectively enable specific services and APIs. not- Balance server load between different Projects. Keep on-prem AD/LDAP accounts synced up with user's GCP resources.
+a less restrictive parent policy may override a more restrictive child policy.
