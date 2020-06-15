@@ -1,0 +1,12 @@
+Common Application vulnerabilities:
+injection flaws - SQL, LDAP, HTML [Injection flaws occur when some form of malicious content can be injected into an application from an app attacker and the application will then accept and interpret that content]
+XSS cross-site scripting - a form of injection where the attacker is able to inject JavaScript in to an application, and the code injection originates from a different site. Cross-site scripting allows attackers to execute scripts in the victims' browser, which can then hijack user session, deface websites, and redirect the user to other malicious sites. 
+weak authentication and access control [and session management] [allows attackers to compromise passwords, keys, or session tokens all to exploit implementation flaws to assume other users' identities]
+sensitive data exposure [at rest or in transit; encrypt]
+security misconfiguration [a result of insecure default configurations, incomplete or ad-hoc configurations, open cloud storage, misconfigured HTTP headers. And also verbose error messages containing sensitive information. Not only must all operating systems, frameworks, libraries, and applications be securely configured, but they must also be patched, upgraded, in a timely fashion in order to keep them secure]
+using components with known vulnerabilities
+
+Cloud Security Scanner can check: XSS, flash injection, mixed content, [HTTP and HTTPS] clear text passwords and use of insecure/outdated JS libraries. The scanner can and almost certainly will change state data in your application, so it should always be used with caution. For example, when scanning a blog application that allows public comments, Cloud security scanner may post test strings as comments on all your blog articles. In an email sign-up page, cloud security scanner may generate large numbers of test emails. 
+to avoid unwanted impact: run scans in test environment, use test accounts, block specific UI elements, block specific URLs, use backup data.
+
+Lab: use the Cloud Security Scanner to detect, fix and verify a vulnerability in an App Engine application.
