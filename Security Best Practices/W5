@@ -1,0 +1,7 @@
+Service accounts are accounts that are created and managed by Kubernetes, but can only be used by Kubernetes created entities such as pots. 
+
+GKE - Hardening clusters: upgrade GKE infrastructure in a timely fashion, monitor cluster configurations, restrict access to planes and nodes, consider group authentication, use shielded GKE nodes, restrict traffic between pods, use secret management, enable workload identity, use least priveleged google service accounts, restrict cluster discovery permissions, restrict access to cluster resources.
+
+Secret management provides another level of security for authenticated secrets, which are generally stored in the etcd directory. To do this, we'll need to configure a third-party secrets manager such as HashiCorp Vault, that can be integrated with GKE clusters and will need to be set up before creating your clusters. Another option is to use Kubernetes secrets natively in GKE, making sure to encrypt the application layer with a key that you manage. Some solutions will work both in GKE and in Anthos GKE deployed on-premises and so may be more desirable if you're running workloads within a hybrid cloud environment.
+When creating this minimally privileged service account, note that GKE requires at a minimum, the service account to have a monitoring.viewer, monitoring.metricwriter, and logging.logwriter roles. 
+securing workloads: limit pod container process privileges, use workload identity, enable binary authorization.
