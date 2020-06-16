@@ -10,3 +10,9 @@ Cloud Security Scanner can check: XSS, flash injection, mixed content, [HTTP and
 to avoid unwanted impact: run scans in test environment, use test accounts, block specific UI elements, block specific URLs, use backup data.
 
 Lab: use the Cloud Security Scanner to detect, fix and verify a vulnerability in an App Engine application.
+
+OAuth phishing is a type of credential phishing that takes advantage of the open authentication, OAuth standard, to gain access to user accounts without needing to know the user's password. OAuth phishing exploits the trust relationship users have with their well-known online service providers, as well as the trust relationships those providers have with their own third party applications. It is accomplished by tricking users into granting persistent access to their accounts.
+OAuth phishing attacks do not use the typical approach used in email phishing i.e. spoofed URL links, signing requests or attached files. This makes this type of phishing more difficult for a less experienced user to detect and may produce a higher rate of success for the hacker. In some cases, that deception is very well-designed and may even affect more experienced and competent users. 
+Cloud Identity-Aware Proxy or Cloud IAP provides a central authentication and authorization layer for your applications over HTTPS. Cloud IAP replaces end-user VPN tunnels or the need to apply an authentication and authorization layer in front of your web application hosted on GCP. 
+
+Lab: Configure the OAuth consent screen, setup cloud IP access, and enable cloud IP. 
