@@ -1,0 +1,29 @@
+Protecting against Distributed Denial of Service Attacks
+..
+DDoS Attack Overview
+DDoS Mitigation and Prevention on GCP
+Using Cloud Armor
+Lab- Configuring Traffic Blacklisting with Cloud Armor
+Security Partner Products
+Infrastructure, Data Protection, Logging and Compliance Partners
+
+Protecting against Content-Related Vulnerabilities
+..
+What is Ransomware?
+Mitigating the Threat of Ransomware
+Misuse of Data and Content
+Threat Mitigation Strategies for Content
+Lab- Redacting Sensitive Data with Data Loss Prevention API
+
+Monitoring, Logging, Auditing and Scanning
+..
+Security Command Center Overview
+Stackdriver monitoring and logging overview
+Stackdriver components
+Stackdriver logs
+Lab: Installing Stackdriver Agents
+Lab: Configuring and Using Stackdriver Monitoring and Logging
+Cloud Audit Logging
+Lab: Configuring and Viewing Audit Logs in Stackdriver
+Deploying and Using Forseti
+Lab Demo - Inventorying and Scanning a Deployment with Forseti
