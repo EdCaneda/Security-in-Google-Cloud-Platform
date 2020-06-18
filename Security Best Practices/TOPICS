@@ -1,0 +1,43 @@
+Securing Compute Engine
+..
+compute engine identity and API access
+VM and API Scopes
+Connecting to Virtual Machines
+Organization Policy Service
+Organization Policy Constraints
+Compute Engine Security
+Lab: Configuring, Using and Auditing VM Service Accounts and Scopes
+Using Shielded VMs to maintain integrity of VM service accounts and scopes
+Encryption Overview
+Customer Supplied and Managed Keys
+Lab: Encrypting Disks with Customer-Supplied Encryption Keys
+
+Securing Cloud Data
+..
+Cloud Storage Permissions and Roles
+Auditing Storage Buckets
+Signed URLS and Signed Policy Documents
+Encrypting Cloud Storage with CMEK and CSEK
+Lab: Using Customer-Supplied Encryption Keys with Cloud Storage
+Lab: Using Customer-Managed Encryption Keys with Cloud Storage and Cloud KMS
+BigQuery IAM Roles and Authorized Views
+Lab: Creating a BigQuery Authorized View
+Cloud Storage Best Practices
+Big Query Storage Best Practices
+
+Securing Applications
+..
+Application Vulnerabilities
+How Cloud Security Scanner Works
+Avoiding Unwanted Impact
+Lab: Using Cloud Security Scanner to Fix Vulnerabilities in an App Engine Application
+Types of Phishing Attacks
+Cloud Identity-Aware Proxy (Cloud IAP)
+Lab: Configuring Cloud Identity-Aware Proxy
+
+Securing Kubernetes
+..
+Authentication and Authorization
+Hardening Your Clusters
+Securing Your Workloads
+Monitoring and Logging
