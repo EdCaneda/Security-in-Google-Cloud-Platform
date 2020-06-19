@@ -16,3 +16,10 @@ Data protection: governance; DLP & DCAP; Encryption and tokenization; HSM
 --identity and user protection: SSO; IAM; anti-malware; MDM/MAM; Gateways & CASB
 
 [Infrastructure protection helps protect your cloud infrastructure and applications from cyber attacks. There are many industry leaders that provides services that can be leveraged from GCP covering a wide range of solutions, including next-generation firewalls, web application firewalls, web proxies and cloud gateways, server endpoint protection, distributed denial-of-service, and container security. Data protection partners can help protect your data from unknown authorized access, as well as internal and external threats through encryption, key management, policy-driven data loss prevention controls. Logging and monitoring partners help enable visibility and audibility user and system activities in your infrastructure while providing policy-driven alerting and reporting. Configuration, vulnerability, risk, and compliance partners can facilitate the visualization and inspection of your network and application deployments for vulnerabilities, security, and compliance risks, and be able to assist with remediation.]
+
+Q)
+Choose from the list below the TWO ways that Google Cloud Platform helps mitigate the risk of DDoS for its customers. 
+true - State-of-the-art physical security for hardware and servers [Because of its scale, Google can deliver a higher level of security at the hardware layers than most of our customers could afford to do on their own.]; Internal capacity many times that of any traffic load we can anticipate [In fact, a single Google Data Center has a bisection bandwidth of 1,300 terabits per second (the whole internet has a bisection bandwidth of 200 terabits per second!)]. 
+false - Isolation servers are available with no external or internal access. Google Blacklist API is automatically included within each project.
+
+false - Cloud Armor currently is not compatible with any third-party partner security products.
