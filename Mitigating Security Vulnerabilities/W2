@@ -7,4 +7,7 @@ Data-related mitigations: making regular backups, using IAM best practices, and 
 [The bad news is, ransomware often targets backups and destroys them, as well as trying to prevent data recovery. So, you need to keep your backup safe by conducting regular data backups of your system and then storing the backup securely in multiple isolated repositories. Having durable secure backups not attached to or accessible by our main systems which will then not be affected should the ransomware attack occur, will allow you to have a mechanism to recover the data if it is destroyed or held hostage. Think of it as insurance.]
 Google data loss prevention or DLP API, can be used to scan all documents for sensitive data before publishing. It can even automatically redact any sensitive data found.
 
-mitigation strategies:
+mitigation strategies: classifyiing content, scanning and redacting content, detecting unacceptable content
+[The Google Vision API can easily detect different types of inappropriate content in images with the ability to flag both adult as well as violent content. The Video Intelligence API can provide similar monitoring and scanning for videos. The Data Loss Prevention API can also be used to detect sensitive data content before it is accidentally exposed to the public. The Google Data Loss Prevention, DLP API, is a machine learning model that can be used to scan various document formats and images for various types of sensitive data and then redact it even for images.]
+
+False: in compute engine, all files are scanned for ransomware type security breaches before uploading.
