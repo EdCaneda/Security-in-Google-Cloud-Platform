@@ -1,0 +1,10 @@
+*cryptoviral extortion*
+Ransomware is a type of malicious software that threatens to publish the victims data or perpetually block access to their data unless a ransom is paid. Ransomware commonly uses a technique called cryptoviral extortion which encrypts the victims data making the data inaccessible without an encryption key. The perpetrator will then demand a ransom payment before they agree to decrypt the files. Digital currencies such as cryptocurrency are used for the ransoms making tracing and prosecuting the perpetrators very difficult. 
+
+Automated mitigstions: Google has global visibility into malicious sites and content. 
+End-user protection: If you're a Gmail user, our security and filtering layers will prevent thousands of malicious attachments from ever reaching your organization's inboxes. If something does reach your inbox, Google Safe Browsing and our Chrome browser protects users by identifying potentially dangerous links in email and showing warnings if a user clicks on them. In Google Drive, all files will undergo a malware scan prior to any file download or file-sharing attempt. 
+Data-related mitigations: making regular backups, using IAM best practices, and leveraging the data loss prevention API. 
+[The bad news is, ransomware often targets backups and destroys them, as well as trying to prevent data recovery. So, you need to keep your backup safe by conducting regular data backups of your system and then storing the backup securely in multiple isolated repositories. Having durable secure backups not attached to or accessible by our main systems which will then not be affected should the ransomware attack occur, will allow you to have a mechanism to recover the data if it is destroyed or held hostage. Think of it as insurance.]
+Google data loss prevention or DLP API, can be used to scan all documents for sensitive data before publishing. It can even automatically redact any sensitive data found.
+
+mitigation strategies:
