@@ -1,4 +1,4 @@
-Monitoring, Loggig, Auditing and Scanning
+Monitoring, Logging, Auditing and Scanning
 ..
 Security Command Center can help to discover, mitigate, and prevent attacks on your applications and data.
 - gives centralised visibility into your cloud resources
@@ -6,3 +6,5 @@ Security Command Center can help to discover, mitigate, and prevent attacks on y
 - integrates with both google and third-party tools
 - helps meet compliance requirements
 - scans for assets at least once a day
+
+Stackdriver is a multi-cloud monitoring and management service that aggregates metrics, logs, and events. It provides a rich set of observable tools that speed root cause analysis, and reduce meantime to resolution. 
