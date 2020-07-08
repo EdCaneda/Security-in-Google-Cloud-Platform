@@ -8,3 +8,12 @@ Security Command Center can help to discover, mitigate, and prevent attacks on y
 - scans for assets at least once a day
 
 Stackdriver is a multi-cloud monitoring and management service that aggregates metrics, logs, and events. It provides a rich set of observable tools that speed root cause analysis, and reduce meantime to resolution. 
+Monitoring: platform, system and app metrics; uptime/healtthchecks; dashboards; alerts.
+Debugger: production debug snapshots, conditional snapshots [the code does not stop when the break point is hit. Instead the code keeps running and a snapshot of the application state is made. The snapshot can then be investigated to determine the state of the application.]
+Trace: latency reporting, per-url latency sampling
+Error reporting
+Profiler: continuous CPU and heap profiling, broad platform support
+Logging: platform, system and app logs; logs search/view/filter; logs-based metrics [log retention]
+
+Lab1: Create service accounts with appropriate role assignments so that the agents installed on your VMs can write log entries and metrics into Stackdriver, install and validate the Linux Stackdriver agents for logging and monitoring, and install the Windows Stackdriver agents for logging and monitoring. 
+Lab2: view logs using a variety of filtering mechanisms, exclude log entries, and disable log ingestion, and export logs and run reports against exported logs. create and report on logging metrics and create a stack driver account used to monitor several GCP projects. create a metrics dashboard and create and use an alerting policy. 
