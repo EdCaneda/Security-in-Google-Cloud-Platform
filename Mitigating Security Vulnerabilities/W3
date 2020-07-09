@@ -17,3 +17,9 @@ Logging: platform, system and app logs; logs search/view/filter; logs-based metr
 
 Lab1: Create service accounts with appropriate role assignments so that the agents installed on your VMs can write log entries and metrics into Stackdriver, install and validate the Linux Stackdriver agents for logging and monitoring, and install the Windows Stackdriver agents for logging and monitoring. 
 Lab2: view logs using a variety of filtering mechanisms, exclude log entries, and disable log ingestion, and export logs and run reports against exported logs. create and report on logging metrics and create a stack driver account used to monitor several GCP projects. create a metrics dashboard and create and use an alerting policy. 
+
+Cloud Audit Logging contains 3 audit logs: admin activity, system events, data access
+Lab3: view audit logs in the activity page, view and filter audit logs in Stackdriver, retrieve log entries with G Cloud, and export audit logs. 
+
+*Forseti Security [security at scale] 
+- modules: inventory [saves snapshot of resources], scanner [to compare role-based security policies and save violations if any], enforcer [compares current state to desired state, makes changes if any differences are found], explain [provides visibility], notifier [dispatch a variety of messages through various channels like Email, Slack, and Cloud Storage. and various formats].
