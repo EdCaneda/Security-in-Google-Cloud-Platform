@@ -1,0 +1,11 @@
+Lab1:
+1.	Utilize CSEK to encrypt files in cloud storage
+2.	Rotate encryption keys
+
+Lab2:
+1.	Manage keys and encrypted data using Cloud Key Management Storage (KMS)
+2.	Create KeyRings and CryptoKeys
+3.	Set a default encryption key for a storage bucket
+4.	Encrypt an object with a Cloud KMS key
+5.	Rotate encryption keys
+6.	Manually perform server-side encryption with KMS keys
