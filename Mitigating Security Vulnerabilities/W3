@@ -23,3 +23,10 @@ Lab3: view audit logs in the activity page, view and filter audit logs in Stackd
 
 *Forseti Security [security at scale] 
 - modules: inventory [saves snapshot of resources], scanner [to compare role-based security policies and save violations if any], enforcer [compares current state to desired state, makes changes if any differences are found], explain [provides visibility], notifier [dispatch a variety of messages through various channels like Email, Slack, and Cloud Storage. and various formats].
+Lab4: install a Forseti Security tool, use Forseti Inventory to collect and store information about a Google Cloud Platform resource, and then leverage the Forseti Scanner to audit Cloud resources and output any rule violations. 
+
+
+Q)
+Stackdriver: TRUE - Stackdriver Logging Agent can be installed on both Compute Engine and AWS EC2 instances. You can analyze Stackdriver log data in BigQuery. False - While Stackdriver logging is not built-in to most GCP services, you can easily add it for a reasonable fee. Stackdriver retains logs for an indefinite period of time. 
+Cloud Audit logging: TRUE - Cloud Audit Logging maintains three audit logs for each project, folder, and organization. Enabling Data Access logs might result in your project being charged for the additional logs usage. Unlike Stackdriver logs, you cannot export Cloud Audit log entries to BigQuery. False - Data Access audit logs record data-access operations on resources that are publicly shared. 
+Forseti Security: TRUE - If something in your system changes unexpectedly, Forseti Security can revert a potentially compromised resource back to a known safe state. False - Forseti "Explain" shows you where your applications may be inadequately protected from DDoS attacks. Forseti "Enforcer" scans user activity and locks the account of users suspected of misusing their access.
